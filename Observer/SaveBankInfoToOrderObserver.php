@@ -254,14 +254,6 @@ class SaveBankInfoToOrderObserver implements ObserverInterface {
                             $responsePaymee = json_decode($responsePaymeeJson, true);
                             if($responsePaymee['status'] !== 0) {
                                 print_r($responsePaymee);
-                                print_r(array(
-                                    "Content-Type: application/json",
-                                    "url: $url",
-                                    "x-api-key: $x_api_key",
-                                    "x-api-token: $x_api_token"
-                                ));
-
-
                                 $this->logger->debug($responsePaymee);
                                 return;   
                             }
