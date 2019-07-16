@@ -29,7 +29,7 @@ O Módulo de integração PayMee para Magento 2.x oferece os principais bancos d
     $ php bin/magento setup:static-content:deploy
     $ chmod -R 777 var/cache/*
 
-Agora, acesse seu painel administrativo e configure suas credencias seguindo o caminho: STORES > CONFIGURATION > SALES > PAYMENT METHODS > PayMee
+    Acesse seu painel administrativo e configure suas credencias seguindo o caminho: STORES > CONFIGURATION > SALES > PAYMENT METHODS > PayMee
 
 
 ## Demo
