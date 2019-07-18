@@ -125,7 +125,7 @@ class Index extends \Magento\Customer\Controller\AbstractAccount
 
         $responseData = json_decode($response, true);
 
-        if($responseData['message'] == 'success') {
+        if($responseData['message'] == 'success' && $responseData['situation'] == 'PAID') {
             return true;
         } return false;
 
