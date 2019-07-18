@@ -20,11 +20,12 @@ O Módulo de integração PayMee para Magento 2.x oferece os principais bancos d
 ## Instalação via Git
 > **Importante: faça o backup da sua loja antes da instalação.**
 
-    $ mkdir -p ~/magento2xModules/PayMee/Tagweb/Paymee
-    $ git clone https://github.com/paymeebrasil/magento-2.x.git ~/magento2xModules/PayMee/Tagweb/Paymee
-    $ mv ~/magento2xModules/PayMee/Tagweb /foo/bar/magento2/app/code
+    $ git clone https://github.com/paymeebrasil/magento-2.x.git ~/magento-2.x/Tagweb/Paymee
+    $ cp -r ~/magento-2.x/* /foo/bar/magento2/app/code
+    
+    #Execute
+    
     $ cd /foo/bar/magento2
-    $ #Execute os comandos
     $ php bin/magento setup:upgrade
     $ php bin/magento setup:static-content:deploy
     $ chmod -R 777 var/cache/*
